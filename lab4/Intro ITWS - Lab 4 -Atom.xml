@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+ 
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+	<title>My Feed</title>
+	<subtitle></subtitle>
+	<link href= "http://dangbrpi.eastus.cloudapp.azure.com/iit/projects.html" rel="self" />
+	<link href="http://dangbrpi.eastus.cloudapp.azure.com/iit/" />
+	<id>urn:uuid:19ec02c3-f723-4ce1-a507-4a888df64a5b</id>
+	<updated>2022-09-26T18:30:02Z</updated>
+	<author>
+		<name>Beatrice Dang</name>
+		<email>dangb@rpi.edu</email>
+	</author>
+ 
+	<entry>
+		<title>The Search for Intelligent Life Is About to Get a Lot More Interesting</title>
+		<link href="https://www.nytimes.com/2022/09/15/magazine/extraterrestrials-technosignatures.html" />
+		<id>urn:uuid:05ab6530-7056-43b2-87b2-32931347cc6d</id>
+		<updated>2022-09-18T16:29:36Z</updated>
+		<summary>There are an estimated 100 billion galaxies in the universe, home to an unimaginable abundance of planets. And now there are new ways to spot signs of life on them.</summary>
+	</entry>
+
+	<entry>
+		<title>'Flesh of the Gods': The Trippy History of Magic Mushrooms</title>
+		<link href="https://www.vice.com/en/article/epzx4p/magic-mushrooms-history" />
+		<id>urn:uuid:2c9458db-547b-46b9-90e9-97ebbe3febbe</id>
+		<updated>2022-09-02T17:53:00Z</updated>
+		<summary>With magic mushrooms seemingly being used more widely than ever, it's high time we look at the ancient history of psychotropic fungi.</summary>
+	</entry>
+
+	<entry>
+		<title>Ends of the Earth</title>
+		<link href="https://www.thisamericanlife.org/779/ends-of-the-earth" />
+		<id>urn:uuid:f42a2a80-fa3e-435d-9549-c8dbd9621ffe</id>
+		<updated>2022-09-16T17:53:00Z</updated>
+		<summary>An exploration of the very upper limits of what you do for someone you love.</summary>
+	</entry>
+
+	<entry>
+		<title>Tropical Box House</title>
+		<link href="https://www.dezeen.com/2015/09/05/tropical-box-house-kuala-lumpur-malaysia-whbc-architects-wrapped-concrete-egg-crate-stilts/" />
+		<id>urn:uuid:4df5758a-b423-41b8-9f7d-e19559f01b2b</id>
+		<updated>2022-09-16T17:53:00Z</updated>
+		<summary>Tropical Box house in Kuala Lumpur is wrapped in a concrete "egg crate"</summary>
+	</entry>
+
+	<entry>
+		<title>How dating apps sold us an unromantic, dehumanising idea of romance</title>
+		<link href="https://i-d.vice.com/en/article/xgyvda/the-problem-with-dating-apps" />
+		<id>urn:uuid:f40b097b-5d8f-48ec-84f1-84f99f33223a</id>
+		<updated>2022-09-16T17:53:00Z</updated>
+		<summary>Why does a system that offers you more romantic prospects than all your ancestors combined leave so many of us feeling so alone?</summary>
+	</entry>
+ 
+</feed>
+
+
+
