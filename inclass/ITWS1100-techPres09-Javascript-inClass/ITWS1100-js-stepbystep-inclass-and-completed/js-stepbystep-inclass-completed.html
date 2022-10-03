@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript In-Class - Intro ITWS</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" href="js-inclass.css" type="text/css" />
+    <script type="text/javascript" src="js-stepbystep-inclass-completed.js"></script>
+  </head>
+  <body>
+    <div id="bodyBlock">
+      <h1>In-Class JavaScript Exercises</h1>
+      <p>This is a document to get you started with JavaScript.</p>
+
+      <!-- we'll modify the following block with JavaScript -->
+      <div id="output">We'll insert some output here using JavaScript.</div>
+
+      <p>
+        We'll manually add HTML and JavaScript below here.
+      </p>
+
+      <p id="slides10_11_12">
+        <!-- An example script declaration: -->
+        <script type="text/javascript">
+          // embedded JavaScript will be placed between these script tags.
+
+<!-- Slide 10 -->
+          // document.write(firstName + " is " + age +"<br\>");
+          document.getElementById("slides10_11_12").appendChild(document.createTextNode(firstName + " is " + age));
+          document.getElementById("slides10_11_12").appendChild(document.createElement("br"));
+<!-- Slide 11 -->
+		  if (age < insuranceCutOffAge) {
+			  // document.write(firstName + " can be\
+        //  insured<br\>");
+        document.getElementById("slides10_11_12").appendChild(document.createTextNode(firstName + " can be\
+          insured"));
+		  } else {
+<!-- Slide 12 -->
+        // document.write(firstName + " cannot be insured<br/>");
+        document.getElementById("slides10_11_12").appendChild(document.createTextNode(firstName + " cannot be insured"));
+		  }
+        document.getElementById("slides10_11_12").appendChild(document.createElement("br"));
+
+
+
+
+        </script>
+
+<!-- Slide 14 -->
+        <button type="button" onclick="alert(firstName);">
+		  Who's there?
+		</button>
+		<br/>
+
+<!-- Slide 15 -->
+        <a href="javascript:alert(cube(5));">
+          You can put JavaScript in an anchor tag too.
+        </a>
+        <br/>
+
+<!-- Slide 20 -->
+        <button type="button" onclick="window.location='http://www.rpi.edu';">
+          Click to see what happens
+        </button>
+        <button type="button" onclick="location='http://www.ibm.com';">
+          Click here to see also
+        </button>
+        <br/>
+
+<!-- Slide 21 -->
+        <button type="button" onclick="document.title='New Title';">
+           Change Title
+        </button>
+        <br/>
+
+<!-- Slide 22 -->
+        <button type="button" onclick="javascript:writeIt();">
+          Write something
+        </button>
+
+        <!-- Slide 23 -->
+                <button type="button" onclick="javascript:changeFoot();">
+                  Change footer
+                </button>
+
+
+      </p>
+            <footer>copyright now - for ever</footer>
+
+    </div>
+    <!--Slide 25    -->
+    <form id="addForm" action="#" method="post"  onsubmit="return showName(this);">
+      <label for="fname">First name:</label>
+      <input type="text" name="fname" id="fname" />
+
+    � <label for="lname">Last name:</label>
+      <input type="text" name="lname" id="lname"/>
+      <input type="submit" value="Submit"/>
+    </form>
+
+   <button type="button" onclick="document.location='./js-inclass.html';">
+   This is a button pointing to a local file.
+   </button>
+
+  </body>
+</html>
