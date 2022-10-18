@@ -1,0 +1,1 @@
+Lab 5 is an exercise in Javascript.
