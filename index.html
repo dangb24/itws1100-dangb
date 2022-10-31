@@ -4,7 +4,62 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+   <script type="text/javascript">
+
+	   var jq = jQuery.noConflict();
+	   jq(document).ready(function(){
+
+         jq('#login').click(function () {
+            jq("fieldset").css({"display":"block"});
+            jq(this).html("Logout");
+         });
+
+         jq('#save').click(function() {
+            jq("fieldset").css({"display":"hidden"});
+            jq("#login").html("Login");
+
+         });
+
+         function validate(formObj) {
+            // put your validation code here
+            // it will be a series of if statements
+
+            var success = true;
+            var message = "";
+
+            if (formObj.userid.value == "") {
+               message += "You must enter a username\n";
+               formObj.userid.focus();
+               success = false;
+            }
+            if (formObj.password.value == "") {
+               message += "You must enter a password\n";
+               formObj.password.focus();
+               success = false;
+            }
+
+            if (success){
+               alert("User Logged In Successfully");
+               return success;
+
+            }
+            else {
+               alert(message);
+               return success;
+            }
+            return true;
+
+         };
+
+
+      });
+
+   </script>
+
+
    <title>Homepage</title>
+
 </head>
 <style type = "text/css">
    body {
@@ -46,6 +101,10 @@
       width: 100px;
       height: auto;
     }
+    fieldset {
+      display:none;
+    }
+
 </style>
 <body>
    <!-- Here is where our webpage content goes -->
@@ -59,7 +118,28 @@
          <ul>
             <li> <a href = http://dangbrpi.eastus.cloudapp.azure.com/iit/projects.html> Projects </a> </li>
             <li> <a href = http://dangbrpi.eastus.cloudapp.azure.com/iit/aboutme.html> About Me </a> </li>
+            <li> <button type = "button" id ="login">Login</button> </li>
          </ul>
+
+         
+      <form id="addForm" name="addForm" action="file:///C:\Users\dangb\Desktop\itws1100\iit\index.html#" method="post" onsubmit= "return validate(this);"></form>
+      <fieldset> 
+         <legend>Login</legend>
+         <div class="formData">
+                           
+
+            <label class="field" for="userid">UserId:</label>
+            <div class="value"><input type="text" size="60" value="" name="userid" id="userid"></div>
+            
+            <label class="field" for="password">Password:</label>
+            <div class="value"><input type="text" size="60" value="" name="password" id="password"></div>
+            <input type="submit" value="save" id="save" name="save">
+
+         </div>
+
+      </fieldset>
+      </form>
+
       </div>
       <footer>
          <a href = "https://www.youtube.com/watch?v=0Y-hfG-6OFA>"> <img src="penguin.gif"> </a>
@@ -67,7 +147,7 @@
          <p><a href="mailto:beatricemdang@gmail.com">beatricemdang@gmail.com</a></p>
          <p><a href="https://www.linkedin.com/in/beatrice-dang/">linkedin.com/in/beatrice-dang</a></p>
       </footer>
-
    </section>
+
 </body>
 </html>
