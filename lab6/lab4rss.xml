@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+	<title>My Feed</title>
+	<description></description>
+	<link>http://dangbrpi.eastus.cloudapp.azure.com/iit/projects.html</link>
+	<lastBuildDate>Mon, 26 Sep 2022 00:00:00 +0000</lastBuildDate>
+	<pubDate>Mon, 26 Sep 2022 00:00:00 +0000</pubDate>
+ 
+	<item>
+		<title>The Search for Intelligent Life Is About to Get a Lot More Interesting</title>
+		<description>There are an estimated 100 billion galaxies in the universe, home to an unimaginable abundance of planets. And now there are new ways to spot signs of life on them.</description>
+		<link>https://www.nytimes.com/2022/09/15/magazine/extraterrestrials-technosignatures.html</link>
+		<guid>https://www.nytimes.com/2022/09/15/magazine/extraterrestrials-technosignatures.html</guid>
+	  <pubDate>Sun, 18 Sep 2022 16:29:36 +0000</pubDate>
+	</item>
+
+	<item>
+		<title>'Flesh of the Gods': The Trippy History of Magic Mushrooms</title>
+		<description>With magic mushrooms seemingly being used more widely than ever, it's high time we look at the ancient history of psychotropic fungi.</description>
+		<link>https://www.vice.com/en/article/epzx4p/magic-mushrooms-history</link>
+		<guid>https://www.vice.com/en/article/epzx4p/magic-mushrooms-history</guid>
+	  <pubDate>Fri, 02 Sep 2022 17:53:00 +0000</pubDate>
+	</item>
+
+	<item>
+		<title>Ends of the Earth</title>
+		<description>An exploration of the very upper limits of what you do for someone you love.</description>
+		<link>https://www.thisamericanlife.org/779/ends-of-the-earth</link>
+		<guid>https://www.thisamericanlife.org/779/ends-of-the-earth</guid>
+	  <pubDate>Fri, 16 Sep 2022 17:53:00 +0000</pubDate>
+	</item>
+
+	<item>
+		<title>Tropical Box House</title>
+		<description>Tropical Box house in Kuala Lumpur is wrapped in a concrete "egg crate"</description>
+		<link>https://www.dezeen.com/2015/09/05/tropical-box-house-kuala-lumpur-malaysia-whbc-architects-wrapped-concrete-egg-crate-stilts/</link>
+		<guid>https://www.dezeen.com/2015/09/05/tropical-box-house-kuala-lumpur-malaysia-whbc-architects-wrapped-concrete-egg-crate-stilts/</guid>
+	  <pubDate>Fri, 16 Sep 2022 17:53:00 +0000</pubDate>
+	</item>
+
+	<item>
+		<title>How dating apps sold us an unromantic, dehumanising idea of romance</title>
+		<description>Why does a system that offers you more romantic prospects than all your ancestors combined leave so many of us feeling so alone?</description>
+		<link>https://i-d.vice.com/en/article/xgyvda/the-problem-with-dating-apps</link>
+		<guid>https://i-d.vice.com/en/article/xgyvda/the-problem-with-dating-apps</guid>
+	  <pubDate>Fri, 16 Sep 2022 17:53:00 +0000</pubDate>
+	</item>
+
+
+
+ 
+</channel>
+</rss>
+

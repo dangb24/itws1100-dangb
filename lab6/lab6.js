@@ -10,7 +10,7 @@ $(document).ready(function () {
    //alert("The instructions for this lab are in the lab6.js file.");
 
    // example event handler:
-   $('#labButton').click(function () {
+   $('#numelements').click(function () {
       alert('You\'ve clicked the lab button');
    });
 
@@ -28,11 +28,11 @@ $(document).ready(function () {
    //   vanish over a 6/10 sec duration when a user clicks "Hide text";
    //   make it appear within a 1 1/2 second duration when a user clicks "Show text":
    $("#hideText").click(function() {
-      $("#showHideBlock p").fadeOut(600);
+      $(".description").fadeOut(600);
    });
 
    $("#showText").click(function() {
-      $("#showHideBlock p").fadeIn(1500);
+      $(".description").fadeIn(1500);
    });
 
    // Problem 3: When a normal list item is clicked, make it turn red using addClass.
@@ -55,11 +55,34 @@ $(document).ready(function () {
    // Problem 5: lookup another jquery method and use this code on the "Toggle Text"
    // link to show/hide the text:
    $("#toggleText").click(function() {
-      $("#showHideBlock p").toggle({
-         function() { $("#showHideBlock p").fadeOut(600);},
-         function() { $("#showHideBlock p").fadeIn(1500);}
+      $(".description").toggle({
+         function() { $(".description").fadeOut(600);},
+         function() { $(".description").fadeIn(1500);}
       });
    });
+
+
+   $.ajax({
+      type: 'GET',
+        url: 'lab4rss.xml',
+      dataType: 'xml',
+      success: function(responseData, status){
+         var output = '<ul>';  
+        $(responseData).find('item').each(function() {
+          output += '<li><a href="' + $(this).find('link').text() + '" target="_blank">';
+          output += $(this).find('title').text();
+          output += '</a></li>';
+          output += '<div class=\'description\'>' + $(this).find('description').text() + '</div><br />';
+        });
+        output += '</ul>';
+        $('#showHideBlock p').html(output);
+      }, error: function(msg) {
+        // there was a problem
+        alert('There was a problem: ' + msg.status + ' ' + msg.statusText);
+      }
+    });
+    
+    
 
 
    /* When you are done:
