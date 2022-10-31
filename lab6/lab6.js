@@ -10,8 +10,25 @@ $(document).ready(function () {
    //alert("The instructions for this lab are in the lab6.js file.");
 
    // example event handler:
-   $('#numelements').click(function () {
-      alert('You\'ve clicked the lab button');
+   $('#numDivs').click(function () {
+      var output = 0;
+      output += document.querySelectorAll('div').length;
+      alert('There are ' + output + ' div tags in the document');
+   });
+
+   $('#numElements').click(function () {
+      var output = $('.bodyBlock *');
+      alert('There are ' + output.length + ' elements in the bodyBlock div of the document');
+   });
+
+   $('#numLi').click(function () {
+      var output = $('#showHideBlock *');
+      alert('There are ' + output.length + ' list items in the showHideBlock of the document');
+   });
+
+   $('#numP').click(function () {
+      var output = $('p *');
+      alert('There are ' + output.length + ' p elements in the document');
    });
 
    // Problem 1: When the user clicks on the <h1>,
@@ -61,7 +78,6 @@ $(document).ready(function () {
       });
    });
 
-
    $.ajax({
       type: 'GET',
         url: 'lab4rss.xml',
@@ -83,8 +99,6 @@ $(document).ready(function () {
     });
     
     
-
-
    /* When you are done:
      Add this to your github repos,
      Post this lab to your iit website,
