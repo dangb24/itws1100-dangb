@@ -36,10 +36,9 @@
 
             if (success){
                alert("User Logged In Successfully");
-               jq("formObj").css({"display":"hidden"});
+               jq("fieldset").css({"display":"none"});
                jq("#login").html("Logout");
                return success;
-
             }
             else {
                alert(message);
