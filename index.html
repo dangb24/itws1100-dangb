@@ -12,7 +12,6 @@
 
          jq('#login').click(function () {
             jq("fieldset").css({"display":"block"});
-            jq(this).html("Logout");
          });
       });
 
@@ -38,7 +37,7 @@
             if (success){
                alert("User Logged In Successfully");
                jq("fieldset").css({"display":"hidden"});
-               jq("#login").html("Login");
+               jq("#login").html("Logout");
                return success;
 
             }
