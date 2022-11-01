@@ -36,7 +36,7 @@
 
             if (success){
                alert("User Logged In Successfully");
-               jq("fieldset").css({"display":"hidden"});
+               jq(this).css({"display":"hidden"});
                jq("#login").html("Logout");
                return success;
 
@@ -47,7 +47,7 @@
             }
             return true;
 
-         };
+   };
    </script>
    
 <title>Homepage</title>
