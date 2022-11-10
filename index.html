@@ -11,7 +11,12 @@
 	   jq(document).ready(function(){
 
          jq('#login').click(function () {
-            jq("fieldset").css({"display":"block"});
+            if ((document.getElementById("login")) == "Login"){
+               jq("fieldset").css({"display":"block"});
+            }
+            else{
+               jq(this).html("Login");
+            }
          });
       });
 
