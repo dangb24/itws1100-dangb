@@ -122,9 +122,9 @@
     for ($i=0; $i < $numRecords; $i++) {
       $record = $result->fetch_assoc();
       if ($i % 2 == 0) {
-        echo "\n".'<tr id="movie-' . $record['movieid'] . '"><td>';
+        echo "\n".'<tr id="actor-' . $record['movieid'] . '"><td>';
       } else {
-        echo "\n".'<tr class="odd" id="movie-' . $record['movieid'] . '"><td>';
+        echo "\n".'<tr class="odd" id="actor-' . $record['movieid'] . '"><td>';
       }
       echo htmlspecialchars($record['title']);
       echo '</td><td>';
