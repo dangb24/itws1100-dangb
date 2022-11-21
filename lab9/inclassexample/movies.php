@@ -94,14 +94,14 @@
 ?>
 
 <h3>Add Movie</h3>
-<form id="addForm" name="addForm" action="index.php" method="post" onsubmit="return validate(this);">
+<form id="addForm" name="addForm" action="movies.php" method="post" onsubmit="return validate(this);">
   <fieldset>
     <div class="formData">
 
       <label class="field" for="title">Title:</label>
       <div class="value"><input type="text" size="60" value="<?php if($havePost && $errors != '') { echo $title; } ?>" name="title" id="title"/></div>
 
-      <label class="field" for="lastName">Year:</label>
+      <label class="field" for="year">Year:</label>
       <div class="value"><input type="text" size="60" value="<?php if($havePost && $errors != '') { echo $year; } ?>" name="year" id="year"/></div>
 
       <input type="submit" value="save" id="save" name="save"/>
