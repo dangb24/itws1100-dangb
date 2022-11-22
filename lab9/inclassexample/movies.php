@@ -65,7 +65,8 @@
       echo '    $("' . $focusId . '").focus();';
       echo '  });';
       echo '</script>';
-    } 
+    } else {
+      if ($dbOk) {
         // Let's trim the input for inserting into mysql
         // Note that aside from trimming, we'll do no further escaping because we
         // use prepared statements to put these values in the database.
@@ -77,7 +78,7 @@
         $insQuery = "insert into movies (`title_`,`year_') values(?,?)";
         $statement = $db->prepare($insQuery);
         // bind our variables to the question marks
-        $statement->bind_param("sss",$titleForDb,$yearForDb);
+        $statement->bind_param("ss",$titleForDb,$yearForDb);
         // make it so:
         $statement->execute();
 
@@ -87,12 +88,13 @@
 
         // close the prepared statement obj
         $statement->close();
-
+      }
+    }
   }
 ?>
 
 <h3>Add Movie</h3>
-<form id="addForm" name="addForm" action="movies.php" method="post" onsubmit="return validate(this);">
+<form id="addForm" name="addForm" action="movies.php" method="post" onclick="return validate(this);">
   <fieldset>
     <div class="formData">
 
