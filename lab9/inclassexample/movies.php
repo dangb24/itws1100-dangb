@@ -65,8 +65,7 @@
       echo '    $("' . $focusId . '").focus();';
       echo '  });';
       echo '</script>';
-    } else {
-      if ($dbOk) {
+    } 
         // Let's trim the input for inserting into mysql
         // Note that aside from trimming, we'll do no further escaping because we
         // use prepared statements to put these values in the database.
@@ -88,13 +87,12 @@
 
         // close the prepared statement obj
         $statement->close();
-      }
-    }
+
   }
 ?>
 
 <h3>Add Movie</h3>
-<form id="addForm" name="addForm" action="index.php" method="post" onsubmit="return validate(this);">
+<form id="addForm" name="addForm" action="movies.php" method="post" onsubmit="return validate(this);">
   <fieldset>
     <div class="formData">
 
