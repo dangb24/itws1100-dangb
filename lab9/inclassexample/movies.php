@@ -42,8 +42,8 @@
     // Get the output and clean it for output on-screen.
     // First, let's get the output one param at a time.
     // Could also output escape with htmlentities()
-    $title = htmlspecialchars(trim($_POST["title"]));
-    $year = htmlspecialchars(trim($_POST["year"]));
+    $title = htmlspecialchars(trim($_POST["title_"]));
+    $year = htmlspecialchars(trim($_POST["year_"]));
 
     $focusId = ''; // trap the first field that needs updating, better would be to save errors in an array
 
@@ -70,8 +70,8 @@
         // Let's trim the input for inserting into mysql
         // Note that aside from trimming, we'll do no further escaping because we
         // use prepared statements to put these values in the database.
-        $titleForDb = trim($_POST["title"]);
-        $yearForDb = trim($_POST["year"]);
+        $titleForDb = trim($_POST["title_"]);
+        $yearForDb = trim($_POST["year_"]);
 
         // Setup a prepared statement. Alternately, we could write an insert statement - but
         // *only* if we escape our data using addslashes() or (better) mysqli_real_escape_string().
