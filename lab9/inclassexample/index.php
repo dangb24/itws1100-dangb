@@ -112,7 +112,7 @@
 ?>
 
 <h3>Add Actor</h3>
-<form id="addForm" name="addForm" action="index.php" method="post" onsubmit="return validate(this);">
+<form id="addForm" name="addForm" action="index.php" method="post" onclick="return validate(this);">
   <fieldset>
     <div class="formData">
 
