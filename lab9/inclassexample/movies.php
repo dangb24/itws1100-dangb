@@ -42,8 +42,8 @@
     // Get the output and clean it for output on-screen.
     // First, let's get the output one param at a time.
     // Could also output escape with htmlentities()
-    $title = htmlspecialchars(trim($_POST["title_"]));
-    $year = htmlspecialchars(trim($_POST["year_"]));
+    $title = htmlspecialchars(trim($_POST["title"]));
+    $year = htmlspecialchars(trim($_POST["year"]));
 
     $focusId = ''; // trap the first field that needs updating, better would be to save errors in an array
 
@@ -70,12 +70,12 @@
         // Let's trim the input for inserting into mysql
         // Note that aside from trimming, we'll do no further escaping because we
         // use prepared statements to put these values in the database.
-        $titleForDb = trim($_POST["title_"]);
-        $yearForDb = trim($_POST["year_"]);
+        $titleForDb = trim($_POST["title"]);
+        $yearForDb = trim($_POST["year"]);
 
         // Setup a prepared statement. Alternately, we could write an insert statement - but
         // *only* if we escape our data using addslashes() or (better) mysqli_real_escape_string().
-        $insQuery = "insert into movies (`title_`,`year_') values(?,?)";
+        $insQuery = "insert into movies (`title`,`year`) values(?,?)";
         $statement = $db->prepare($insQuery);
         // bind our variables to the question marks
         $statement->bind_param("ss",$titleForDb,$yearForDb);
@@ -114,7 +114,7 @@
 <?php
   if ($dbOk) {
 
-    $query = 'select * from movies order by title_';
+    $query = 'select * from movies order by title';
     $result = $db->query($query);
     $numRecords = $result->num_rows;
 
@@ -126,9 +126,9 @@
       } else {
         echo "\n".'<tr class="odd" id="actor-' . $record['movieid'] . '"><td>';
       }
-      echo htmlspecialchars($record['title_']);
+      echo htmlspecialchars($record['title']);
       echo '</td><td>';
-      echo htmlspecialchars($record['year_']);
+      echo htmlspecialchars($record['year']);
       echo '</td><td>';
       echo '<img src="resources/delete.png" class="deleteActor" width="16" height="16" alt="delete movie"/>';
       echo '</td></tr>';
