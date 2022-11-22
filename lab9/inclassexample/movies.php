@@ -5,7 +5,7 @@
 <title>PHP &amp; MySQL - ITWS</title>
 
 <?php
-  include('includes/head.inc.php');
+  include('includes/head.inc2.php');
   // include global css, javascript, end the head and open the body
 ?>
 
@@ -22,7 +22,7 @@
 
   /* Create a new database connection object, passing in the host, username,
      password, and database to use. The "@" suppresses errors. */
-  @ $db = new mysqli('localhost', 'phpmyadmin','Eightyeight**88', 'iit');
+  @ $db = new mysqli('localhost', 'phpmyadmin', 'Eightyeight**88', 'iit');
 
   if ($db->connect_error) {
     echo '<div class="messages">Could not connect to the database. Error: ';
@@ -94,7 +94,7 @@
 ?>
 
 <h3>Add Movie</h3>
-<form id="addForm" name="addForm" action="movies.php" method="post" onclick="return validate(this);">
+<form id="addForm" name="addForm" action="movies.php" method="post" onsubmit="return validate(this);">
   <fieldset>
     <div class="formData">
 

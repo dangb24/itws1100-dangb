@@ -2,13 +2,13 @@ function validate(formObj) {
   
     if (formObj.title.value == "") {
       alert("Please enter a title");
-      formObj.firstNames.focus();
+      formObj.title.focus();
       return false;
     }
     
     if (formObj.year.value == "") {
       alert("Please enter a year");
-      formObj.lastName.focus();
+      formObj.year.focus();
       return false;
     }   
     return true;
@@ -21,7 +21,7 @@ function validate(formObj) {
     $("#title").focus();
        
     $(".deleteActor").click(function() {
-      if(confirm("Remove actor? (This action cannot be undone.)")) {
+      if(confirm("Remove movie? (This action cannot be undone.)")) {
         
         // get the id of the clicked element's row
         var curId = $(this).closest("tr").attr("id");
@@ -35,7 +35,7 @@ function validate(formObj) {
         
         $.ajax({
           type: "post",
-          url: "actor-delete.php",
+          url: "movie-delete.php",
           dataType: "json",
           data: postData,
           success: function(responseData, status){
@@ -52,7 +52,7 @@ function validate(formObj) {
               $(".messages").hide();
               
               // populate the js message box and show it:
-              $("#jsMessages").html("<h4>Actor deleted</h4>").show();
+              $("#jsMessages").html("<h4>Movie deleted</h4>").show();
               
               // re-zebra the table
               $("#actorTable tr").each(function(i){
