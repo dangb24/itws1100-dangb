@@ -78,7 +78,7 @@
         $insQuery = "insert into movies (`title_`,`year_') values(?,?)";
         $statement = $db->prepare($insQuery);
         // bind our variables to the question marks
-        $statement->bind_param("ss",$titleForDb,$yearForDb);
+        $statement->bind_param("sss",$titleForDb,$yearForDb);
         // make it so:
         $statement->execute();
 
@@ -94,7 +94,7 @@
 ?>
 
 <h3>Add Movie</h3>
-<form id="addForm" name="addForm" action="movies.php" method="post" onsubmit="return validate(this);">
+<form id="addForm" name="addForm" action="index.php" method="post" onsubmit="return validate(this);">
   <fieldset>
     <div class="formData">
 
@@ -110,7 +110,7 @@
 </form>
 
 <h3>Movies</h3>
-<table id="movieTable">
+<table id="actorTable">
 <?php
   if ($dbOk) {
 
