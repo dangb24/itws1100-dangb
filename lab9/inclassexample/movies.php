@@ -110,7 +110,7 @@
 </form>
 
 <h3>Movies</h3>
-<table id="actorTable">
+<table id="movieTable">
 <?php
   if ($dbOk) {
 
