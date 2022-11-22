@@ -78,7 +78,7 @@
         $insQuery = "insert into movies (`title`,`year') values(?,?)";
         $statement = $db->prepare($insQuery);
         // bind our variables to the question marks
-        $statement->bind_param("sss",$titleForDb,$yearForDb);
+        $statement->bind_param("ss",$titleForDb,$yearForDb);
         // make it so:
         $statement->execute();
 
