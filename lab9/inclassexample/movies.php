@@ -66,7 +66,7 @@
       echo '  });';
       echo '</script>';
     } else {
-      //if ($dbOk) {
+      if ($dbOk) {
         // Let's trim the input for inserting into mysql
         // Note that aside from trimming, we'll do no further escaping because we
         // use prepared statements to put these values in the database.
@@ -75,7 +75,7 @@
 
         // Setup a prepared statement. Alternately, we could write an insert statement - but
         // *only* if we escape our data using addslashes() or (better) mysqli_real_escape_string().
-        $insQuery = "insert into movies (`title`,`year') values(?,?)";
+        $insQuery = "insert into movies (`title_`,`year_') values(?,?)";
         $statement = $db->prepare($insQuery);
         // bind our variables to the question marks
         $statement->bind_param("ss",$titleForDb,$yearForDb);
@@ -88,7 +88,7 @@
 
         // close the prepared statement obj
         $statement->close();
-      //}
+      }
     }
   }
 ?>
@@ -114,7 +114,7 @@
 <?php
   if ($dbOk) {
 
-    $query = 'select * from movies order by title';
+    $query = 'select * from movies order by title_';
     $result = $db->query($query);
     $numRecords = $result->num_rows;
 
@@ -126,9 +126,9 @@
       } else {
         echo "\n".'<tr class="odd" id="actor-' . $record['movieid'] . '"><td>';
       }
-      echo htmlspecialchars($record['title']);
+      echo htmlspecialchars($record['title_']);
       echo '</td><td>';
-      echo htmlspecialchars($record['year']);
+      echo htmlspecialchars($record['year_']);
       echo '</td><td>';
       echo '<img src="resources/delete.png" class="deleteActor" width="16" height="16" alt="delete movie"/>';
       echo '</td></tr>';
