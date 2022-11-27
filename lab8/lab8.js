@@ -10,34 +10,16 @@ $(document).ready(function() {
 		   output += '<h3>' + item.title + '</h3>';
 		   output += '<div> <p> <a href = "' + item.link + '">' + item.description + '</a></p> </div>';
 	  });
-	$( function() {
+	$( function() { //this function creates an accordion menu that hides and displays a description and link to a lab
 		$( "#labs" ).accordion({
 			collapsible: true,
 		});
 	});
 	$('#labs').html(output);
-	}, error: function(msg) {
-				  // there was a problem
+	}, error: function(msg) { // there was a problem
 	  alert('There was a problem: ' + msg.status + ' ' + msg.statusText);
 	}
-  	});
-
-	// $.ajax({
-    // 	type: 'GET',
-    // 	url: 'projects.json',
-    // 	dataType: 'json',
-   	// 	success: function(responseData, status){
-    //   	$.each(responseData.item, function() {
-    //     	  $('.projects').append(
-    //       	//   '<h3><a href="' + this.link + '">' + this.title + '</a></h3>' + 
-	// 		  '<h3>' + this.title + '</h3>' + 
-	// 		  	'<div> <p>' + this.description + '</p> </div>');
-    //   	});
-    // 	}, error: function(msg) {
-    //   	// there was a problem
-    //   	alert('There was a problem: ' + msg.status + ' ' + msg.statusText);
-    // 	}
-  	// });	
+  	});	
 });
 
   

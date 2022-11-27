@@ -1,113 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+   <title>Homepage</title>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-   <script type="text/javascript">
-
-	   var jq = jQuery.noConflict();
-	   jq(document).ready(function(){
-
-         jq('#login').click(function () {
-            if ((document.getElementById("login")) == "Login"){
-               jq("fieldset").css({"display":"block"});
-            }
-            else{
-               jq(this).html("Login");
-            }
-         });
-      });
-
-               
-      function validate(formObj) {
-            // put your validation code here
-            // it will be a series of if statements
-
-            var success = true;
-            var message = "";
-
-            if (formObj.userid.value == "") {
-               message += "You must enter a username\n";
-               formObj.userid.focus();
-               success = false;
-            }
-            if (formObj.password.value == "") {
-               message += "You must enter a password\n";
-               formObj.password.focus();
-               success = false;
-            }
-
-            if (success){
-               alert("User Logged In Successfully");
-               jq("fieldset").css({"display":"none"});
-               jq("#login").html("Logout");
-               return success;
-            }
-            else {
-               alert(message);
-               return success;
-            }
-            return true;
-
-   };
-   </script>
-   
-<title>Homepage</title>
-
+   <script type="text/javascript" src="index.js"></script>
+   <link rel="stylesheet" href="index.css" type="text/css" />
 </head>
-<style type = "text/css">
-   body {
-       background-color: lightcyan; 
-       font-family: 'Garamond', serif; 
-   }
-   h1 {
-       text-align: center;
-       font-size:40px;
-   }
-   h2 {
-       padding-left: 100px;
-       font-size:30px;
-       color:grey;
-   }
-   ul {
-       color: grey;
-       padding-left: 150px;
-       display: inline-block;
-   }
-   #demobox {
-       margin: 20px;
-       background-color: #cae9e0;
-       padding: 10px ;
-       border: 1px solid #cfc ;
-    }
-    #demobox2 {
-       margin: 20px;
-       background-color: #f5fcff;
-       padding: 10px ;
-       border: 1px solid #cfc;
-    }
-    footer {
-        margin: 20px;
-        line-height: 5px;
-        text-align: right;
-    }
-    img {
-      width: 100px;
-      height: auto;
-    }
-    fieldset {
-      display:none;
-    }
 
-</style>
 <body>
    <!-- Here is where our webpage content goes -->
    <section class="beginning">
       <div id = "demobox">
          <h1>Home Page</h1>
-         <p> <center><em> Welcome to my home page!</em></center></p>
+         <p><center><em> Welcome to my home page!</em></center></p>
       </div>
       <div id = "demobox2">
       <h2>Menu</h2>
