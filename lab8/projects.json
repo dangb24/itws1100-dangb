@@ -27,7 +27,7 @@
       },
       {
          "title": "Lab 9: PHP and MySQL",
-         "link": "http://dangbrpi.eastus.cloudapp.azure.com/iit/lab6/lab6.html",
+         "link": "http://dangbrpi.eastus.cloudapp.azure.com/iit/lab9/index.php",
          "description": "We used PHP to display databases of actors and movies created with mysql."
       }
    ]

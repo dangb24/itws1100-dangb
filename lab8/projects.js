@@ -1,5 +1,5 @@
 {
-   "item": [
+   "item" [
       {
          "title": "Lab 2: Resume",
          "link": "http://dangbrpi.eastus.cloudapp.azure.com/iit/lab2/lab2.html",
