@@ -12,6 +12,9 @@ h2 {
     font-size:30px;
     color:grey;
 }
+p {
+   text-align: center; 
+}
 ul {
     color: grey;
     padding-left: 150px;
