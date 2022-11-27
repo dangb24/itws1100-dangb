@@ -24,6 +24,11 @@
          "title": "Lab 6: jQuery",
          "link": "http://dangbrpi.eastus.cloudapp.azure.com/iit/lab6/lab6.html",
          "description": "An exercise to create different buttons/functionalities using jQuery and JavaScript."
+      },
+      {
+         "title": "Lab 9: PHP and MySQL",
+         "link": "http://dangbrpi.eastus.cloudapp.azure.com/iit/lab6/lab6.html",
+         "description": "We used PHP to display databases of actors and movies created with mysql."
       }
    ]
 }
