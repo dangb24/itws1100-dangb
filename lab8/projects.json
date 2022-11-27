@@ -26,7 +26,7 @@
          "description": "An exercise to create different buttons/functionalities using jQuery and JavaScript."
       },
       {
-         "title": "Lab 9: PHP and MySQL",
+         "title": "Lab 8: PHP and MySQL",
          "link": "http://dangbrpi.eastus.cloudapp.azure.com/iit/lab9/index.php",
          "description": "We used PHP to display databases of actors and movies created with mysql."
       }
