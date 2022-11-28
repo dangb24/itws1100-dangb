@@ -3,22 +3,22 @@
       {
          "title": "Lab 2: Resume",
          "link": "http://dangbrpi.eastus.cloudapp.azure.com/iit/lab2/lab2.html",
-         "description": "Using CSS we styled and wrote our own html resume."
+         "description": "Using CSS I styled and wrote my own html resume."
       },
       {
          "title": "Lab 3: Website",
          "link": "http://dangbrpi.eastus.cloudapp.azure.com/iit",
-         "description": "Deployment of an index and projects page onto our Azure instances."
+         "description": "Deployment of an index and projects page onto my Azure instances."
       },
       {
          "title": "Lab 4: XML Feeds",
          "link": "http://dangbrpi.eastus.cloudapp.azure.com/iit/lab4/lab4.html",
-         "description": "Using Atom and RSS, we created personalized news feeds and read the files using ajax."
+         "description": "Using Atom and RSS, I created personalized news feeds and read the files using ajax."
       },
       {
          "title": "Lab 5: JavaScript",
          "link": "http://dangbrpi.eastus.cloudapp.azure.com/iit/lab5/lab5.html",
-         "description": "Using JavaScript, we created a fillable contact form."
+         "description": "Using JavaScript, I created a fillable contact form."
       },
       {
          "title": "Lab 6: jQuery",
@@ -26,9 +26,14 @@
          "description": "An exercise to create different buttons/functionalities using jQuery and JavaScript."
       },
       {
-         "title": "Lab 8: PHP and MySQL",
+         "title": "Lab 9: PHP and MySQL",
          "link": "http://dangbrpi.eastus.cloudapp.azure.com/iit/lab9/index.php",
-         "description": "We used PHP to display databases of actors and movies created with mysql."
+         "description": "I used PHP to display databases of actors and movies created with mysql."
+      },
+      {
+         "title": "Lab 10: Moving Our Servers to Production",
+         "link": "http://dangbrpi.eastus.cloudapp.azure.com",
+         "description": "Removing permissions from my index to make my homepage public."
       }
    ]
 }
